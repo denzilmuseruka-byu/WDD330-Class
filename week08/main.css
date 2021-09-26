@@ -1,0 +1,66 @@
+main {
+    padding: 10px;
+    margin: 10px auto;
+    font-weight: 700;
+	width: 80%;
+	max-width: 100%;
+}
+
+.date	{
+	font-size: 18px;
+}
+
+h3 {
+    color: #33180B;
+}
+
+header	{
+	color: #33180B;
+	font-size: 28px;
+}
+
+p, li	{
+	color: #33180B;
+	font-size: 16px;
+}
+
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li {
+    display: none;
+    border: 10px solid #649DA4;
+    padding: 18px;
+    margin: 10px;
+    background-color:  rgb(5, 153, 252);
+    transition: all 0.8s;
+    font-size: 120%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E2D6CA;
+}
+
+nav ul li:hover {
+    background-color: #649DA4;
+    color: #F2E5D5;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+}
+
+.display li {
+    display: block;
+}
+
