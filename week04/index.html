@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Denzil Museruka - WDD 330 Portfolio</title>
+	<link rel='stylesheet' href='../styles.css'>
+</head>
+
+<body>
+	<!-- Navbar (sit on top) -->
+	<div class="nav-top">
+		<div class="bar white padding card nav-text">
+			<a href="#home" class="bar-item button">WDD-330</a>
+			<!-- Right-sided navbar links. Hide them on small screens -->
+			<div class="right hide-small">
+				<span class="nav-item">
+					<a href="/index.html">
+						Home
+					</a>
+				</span>
+
+				<a class="nav-item" href="/week02/index.html">
+					Week 02
+				</a>
+				<a class="nav-item" href="/week03/index.html">
+					Week 03
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<h2>Week 4</h2>
+	<h3>Notes</h3>
+	<ul>
+		<h4>JavaScript: Novice to Ninja - Chapter 8</h4>
+		<li>The <code>form.submit()</code> method will submit the form automatically.</li>
+		<li>Alternately, a form can be submitted anually by the user employing a button or input element with a
+			<code>type</code> attribute of <code>submit</code>, or even an input element with a <code>type</code>
+			attribute of <code>image</code>
+		</li>
+		<li>The <code>form.reset()</code> method will reset all the form controls back to their initial values specified
+			in the HTML.</li>
+		<li>A button with a <code>type</code> attribute of <code>reset</code> can also be used to do this without the
+			need for additional scripting. However, they are generally considered poor usability because it is too easy
+			to accidentally click and reset the entire form.</li>
+		<li>The <code>form.action</code> property can be used to set the <code>action</code> attribute of a form so its
+			sent toa different URL to be processed on the server.</li>
+		<li>The <code>focus</code> event occurs when an element is focused on.</li>
+		<li>The <code>blur</code> event occurs when the user moves the focus away from the form element.</li>
+		<li>The <code>change</code> event occurs when the user moves the focus away from the form element after changing
+			it.</li>
+		<li>The <code>submit</code> event occurs when the form is submitted.</li>
+		<li>Text input element objects have a <code>value</code> property that can be used to retrieve the text inside
+			the field.</li>
+		<li>Some common types of form control are:
+			<ul>
+				<li><code>input</code> fields, including text, passwords, check boxes, radio buttons, and file uploads
+				</li>
+				<li><code>select</code> menus for drop-down lists of options</li>
+				<li><code>textarea</code> elements for longer text entry</li>
+				<li><code>button</code> elements for submitting and resetting forms</li>
+			</ul>
+		</li>
+		<li>The <code>autofocus</code> attribute gives focus to the element when a page loads.</li>
+		<li>The <code>placeholder</code> attribute will insert the value provided in the input field until the user
+			enters some text.</li>
+		<li>The <code>maxlength</code> attribute will limit the number of characters that can be entered in the field to
+			the value given</li>
+		<li>It is advisable to use both client-side and server-side validation.</li>
+		<h4>JavaScript: Novice to Ninja - Chapter 12</h4>
+		<li>Encapsulation means keeing the inner workings hidden inside the object and only allowing the essential
+			functionalities to be exposed to the end user.</li>
+		<li>Polymorphism is the idea that the same process can be used for different objects. Various objects can share
+			the same method, but also have the ability to override shared methods with a more specific implementation.
+		</li>
+		<li>Inheritance takes an object that already exists and inherits all of its properies and methods. Then improves
+			on its functionality by adding new properties and methods.</li>
+		<li>ES6 introduced the newclass declarationsyntax that does exactly the same thing as a constructor function,
+			but looks much similar to writing a class in a class-based programming language. </li>
+		<li>The <code>static</code> keyword can be used in class declarations to create a static method.</li>
+		<li>The <code>prototype</code> property of a class can add extra methods and properties of the class.</li>
+		<li>Prototype properties are shared by every instance of the class.</li>
+		<li>An object instance can overwrite any properties or methods inherited from its prototype by simply assigning
+			a new value to them.</li>
+		<li>Never use arrays or objects as a default value in prototype.</li>
+		<li>By default, an object’s methods are public in JavaScript.</li>
+		<li>Properties of objects in JavaScript are said to beenumerableornon-enumerable. If they aren't enumerable,
+			this means they will not show up when a for-in loop is used to loop through an object’s properties and
+			methods.</li>
+		<li>A class can inherit from another class using the <code>extends</code> keyword in a class declaration.</li>
+		<li>Inside the child class declaration, the keyword <code>super</code> refers to the parent class, and can be
+			used to access any properties and call any methods of the parent class.</li>
+		<li>A mixin is a way of adding properties and methods of some objects to another object without using
+			inheritance. It allows more complex objects to be created by ‘mixing’ basic objects together.</li>
+		<li>'Composition over inheritance'. This approach advocates creating small objects that describe single tasks or
+			behaviors and using them as the building blocks for more complex objects. </li>
+		<li>A good rule of thumb is to only inherit once, keeping the inheritance chain to just two objects makes
+			unpicking any issues far easier.</li>
+		<h4>JavaScript: Novice to Ninja - Chapter 15</h4>
+		<li>jQuery is the most popular of all the JavaScript libraries used today and has a plugin system that makes it
+			easy to extend and use to build common web page elements.</li>
+		<li>A library should not be used because of a lack of understanding of JavaScript. Instead, it should be used to
+			speed up JavaScript development by making it easier to complete common tasks.</li>
+		<li>A module is a self-contained piece of code that provides functions and methods that can then be used in
+			other files and by other modules. This helps to keep code organized in separate, reusable files, which
+			improves code maintainability.</li>
+		<li>There are a few important points about modules that are worth keeping in mind:
+			<ul>
+				<li>All code in modules is always in strict mode without the need for 'use strict' and there is no way
+					to opt out of this.</li>
+				<li>A module has its own global scope, so any variables created in the top-level of a module can only be
+					accessed within that module.</li>
+				<li>The value of <code>this</code> in the top level of a module is <code>undefined</code>, rather than
+					the global object.</li>
+				<li>You can't use HTML-style comments in modules (although this isn't very common in any JavaScript
+					program these days).</li>
+			</ul>
+		</li>
+		<li>Model-View-Controller (MVC) is a design pattern that’s been used for a long time in server-side languages.
+			MVC separates an application into three distinct, independent components that interact with each other:
+			<ul>
+				<li><b>Models</b> are objects that implement the functionality for creating, reading, updating and
+					deleting (known as CRUD tasks) specific pieces of information about the application, as well as any
+					other associated logic and behavior. In a to-do list application, for example, there would be a task
+					model providing methods to access all the information about the tasks such as names, due dates and
+					completed tasks. This data will often be stored in a database or some other container.</li>
+				<li><b>Views</b> provide a visual representation of the model showing all the relevant information. In a
+					web application, this would be the HTML displayed on a web page. Views also provide a way for users
+					to interact with an application, usually via forms. In a to-do list application, the views would
+					display the tasks as an HTML list with checkboxes that a user could tick to say a task had been
+					completed.</li>
+				<li><b>Controllers</b> link models and views together by communicating between them. They respond to
+					events, which are usually inputs from a user (entering some data into a form, for example), process
+					the information, then update the model and view accordingly. In a to-do list application, the
+					controller functions would respond to the event of a user clicking on a check box and then inform
+					the model that a task had been completed. The model would then update the information about that
+					task.</li>
+			</ul>
+		</li>
+	</ul>
+	<div class="exercices">
+		<h3>Exercises</h3>
+		<ul>
+			<li class="contents"><a href="search/search.html">Search</a></li>
+			<li class="contents"><a href="hero/hero.html">Hero</a></li>
+			<li class="contents"><a href="quiz/index.html">Quiz Game</a></li>
+			<li class="contents"><a href="MVC/list.html">MVC List</a></li>
+		</ul>
+	</div>
+
+</body>
+
+</html>

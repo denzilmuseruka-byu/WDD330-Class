@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Denzil Museruka - WDD 330 Portfolio</title>
+	<link rel='stylesheet' href='../styles.css'>
+</head>
+
+<body>
+	<!-- Navbar (sit on top) -->
+	<div class="nav-top">
+		<div class="bar white padding card nav-text">
+			<a href="#home" class="bar-item button">WDD-330</a>
+			<!-- Right-sided navbar links. Hide them on small screens -->
+			<div class="right hide-small">
+				<span class="nav-item">
+					<a href="/index.html">
+						Home
+					</a>
+				</span>
+				<span class="nav-item">
+					<a href="/week02/index.html">
+						Week 02
+					</a>
+				</span>
+				<span class="nav-item">
+					<a href="/week03/index.html">
+						Week 03
+					</a>
+				</span>
+				<span class="nav-item">
+					<a href="/week04/index.html">
+						Week 04
+					</a>
+				</span>				
+			</div>
+		</div>
+	</div>
+
+	<h2>Week 4</h2>
+	<h3>Notes</h3>
+	<h4>JavaScript: Novice to Ninja - Chapter 10</h4>
+
+	<ul>
+		<li>System Error: There's a problem with the system or external devices with which the program is interacting.
+			We have little influence over how external systems work, but we should still be aware of possible erros and
+			attempt to reduce their impact.</li>
+		<li>Programmer Error: The program contains incorrect syntax or faulty logic; it could even be as simple as a
+			typo. These are our responsibility. Minimize them as much as possible and fix them promptly.</li>
+		<li>User Error: The user has entered data incorrectly, which the program is unable to handle. We should try to
+			limit these by predicting possible interactions and deal with them in a way that doesn't negatively impact
+			the user experience.</li>
+		<li>An exception is an error that produces a return value that can then be used by the program to deal with the
+			error.</li>
+		<li>A stack trace is a sequence of functions or method calls that lead to the point where the error occurred.
+		</li>
+		<li>A warning can occur if there’s an error in the code that isn't enough to cause the program to crash.</li>
+		<li>A programmer should ensure that the code they write fails loudly in development so any errors can be
+			identified and fixed quickly. In production, a programmer should try to make the code fail gracefully
+			(although not completely silently ― we still need to know there’s an error), so the user experience is not
+			affected, if possible.</li>
+		<li>Strict mode produces more exceptions and warnings and prohibits the use of some deprecated features. To use
+			strict mode, add the line <code>'use strict';</code> to your JavaScript file or functions.</li>
+		<li>JavaScript modules are in strict mode by default so the declarations is not required.</li>
+		<li>Linting tools can be used to test the quality and consistencty of JavaScript code.</li>
+		<li>Debugging is the process of finding out where bugs occur in the code and then dealing with them.</li>
+		<li>The most basic form of debugging is to use the <code>alert()</code> method to show a dialog at certain
+			points in the code. Because <code>alert()</code> stops a program from running until OK is clicked, it allows
+			us to effectively put breakpoints in the code that let us check the value of variables at that point to see
+			if they’re what we expect them to be.</li>
+		<li>One of the most useful commands is the <code>debugger</code> keyword. This will create a breakpoint in your
+			code that will pause the execution of the code and allow you to see where the program is currently up to.
+		</li>
+		<li>Remember to remove any references to the <code>debugger</code> command before shipping any code, otherwise
+			the program will appear to freeze when people try to use it!</li>
+		<li>An <code>error</code> object can be created by the host environment when an exception occurs, or it can be
+			created in the code using a constructor function.</li>
+		<li>It is possible to handle exceptions gracefully by catching the error. Any errors can be hidden from users,
+			but still identified. We can then deal with the error appropriately ― perhaps even ignore it ― and keep the
+			program running.</li>
+		<li>Testing is an important part of programming that can often be overlooked. Writing good tests means your code
+			will be less brittle as it develops, and any errors will be identified early on.</li>
+		<li>Test-driven development(TDD) is the process of writing tests before any actual code. Obviously these tests
+			will initially fail, because there is no code to test. The next step is to write some code to make the tests
+			pass.</li>
+	</ul>
+	<div class="exercices">
+		<h3>Exercises</h3>
+		<ul>
+			<li><a href="quiz/index.html">Quiz Game</a></li>
+		</ul>
+	</div>
+
+</body>
+
+</html>

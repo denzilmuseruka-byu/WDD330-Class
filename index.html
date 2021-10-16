@@ -1,22 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 330 portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Denzil Museruka</h1>
-    <h2>WDD 330 portfolio</h2>
-    <ol>
-      <li><a href="./week02/index.html">Week02</a></li>
-      <li><a href="./week03/index.html">Week03</a></li>
-      <li><a href="./week08/index.html">Week08</a></li>
-    </ol> 
-    </ul>
+<html>
+<title>WDD-330 Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./styles.css">
+<style>
+    body {
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+    .bar {
+    width: 100%;
+    overflow: hidden
+}
+
+    .bar .bar-item {
+        padding: 8px 16px;
+        float: left;
+        width: auto;
+        border: none;
+        display: block;
+        outline: 0
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+    }
+
+    .xxxlarge {
+        font-size: 48px !important
+    }
+
+    .xxlarge {
+        font-size: 36px !important
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="nav-top">
+        <div class="bar white padding card nav-text">
+            <a href="#home" class="bar-item button">WDD-330</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="right hide-small">
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="display-container content wide" id="home">
+        <img class="main-image" src="images/image-02.jpg" alt="Hamburger Catering" width="1600" height="800">
+        <div class="display-bottomleft padding-large opacity">
+            <h1 class="xxlarge">Web Frontend Development II</h1>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="content">
+
+        <!-- About Section -->
+        <div class="row padding-64" id="about">
+            <div class="col m6 padding-large hide-small">
+                <img src="../images/image-01.jpg" class="round-image" alt="keyboard" width="400" height="500">
+            </div>
+
+            <div class="col m6 padding-large">
+                <h1 class="center">Contents</h1><br>
+                <ul>
+                  <li class="contents"><a href="./week02/index.html">Week02</a></li>
+                  <li class="contents"><a href="./week03/index.html">Week03</a></li>
+                  <li class="contents"><a href="./week04/index.html">Week04</a></li>
+                  <li class="contents"><a href="./week05/index.html">Week05</a></li>
+                  <li class="contents"><a href="./week08/index.html">Week08</a></li>
+                </ul> 
+
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+
+
+    </div>
+
+    <!-- Footer -->
+
     <footer>
-      &copy; 2021 | Portfolio | Denzil Museruka
+        <p>© 2021 WDD-330</p>
+        <div class="social">
+            <a href="https://www.instagram.com/dmuseruka05/" target="_blank">
+                <img src="https://cdn.glitch.com/6cbfc8fe-ee70-4cff-ab34-4f8f29578ab6%2Fbd767cf3-2435-4570-add5-8e31ccba29b1_instagram.png?v=1633186235021"
+                    alt="Instagram icon" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100059125953739" target="_blank">
+                <img src="https://cdn.glitch.com/6cbfc8fe-ee70-4cff-ab34-4f8f29578ab6%2Fbd767cf3-2435-4570-add5-8e31ccba29b1_facebook.png?v=1633186235021"
+                    alt="Facebook icon" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCwQcOOdSio06gOjryscSddA" target="_blank">
+                <img src="https://cdn.glitch.com/6cbfc8fe-ee70-4cff-ab34-4f8f29578ab6%2Fbd767cf3-2435-4570-add5-8e31ccba29b1_youtube.png?v=1633186235021"
+                    alt="Youtube icon" />
+            </a>
+        </div>
     </footer>
-  </body>
+
+</body>
+
 </html>
