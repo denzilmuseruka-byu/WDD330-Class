@@ -97,5 +97,6 @@ form {
     justify-content: center;
     padding: 5px 5px;
     font-size: x-large;
-    background-color: rgb(108, 129, 148);
+    color: #FFF;
+    background-color: rgb(57,75,88);
 }
