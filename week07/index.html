@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Denzil Museruka - WDD 330 Portfolio</title>
+	<link rel='stylesheet' href='../styles.css'>
+</head>
+
+<body>
+	<!-- Navbar (sit on top) -->
+	<div class="nav-top">
+		<div class="bar white padding card nav-text">
+			<a href="../index.html" class="bar-item button">WDD-330</a>
+			<!-- Right-sided navbar links. Hide them on small screens -->
+			<div class="right hide-small">
+				<span class="nav-item">
+					<a href="../index.html">
+						Home
+					</a>
+				</span>
+				<span class="nav-item">
+					<a href="../week04/index.html">
+						Week 04
+					</a>
+				</span>
+				<span class="nav-item">
+					<a href="../week05/index.html">
+						Week 05
+					</a>
+				</span>
+				<span class="nav-item">
+					<a href="../week06/index.html">
+						Week 06
+					</a>
+				</span>				
+			</div>
+		</div>
+	</div>
+
+	<h2>Week 7</h2>
+	<h3>Notes</h3>
+	<h4>JavaScript: Novice to Ninja - Chapter 10</h4>
+
+	<ul>
+		<li>The <code>call()</code> method can be used to set the value of <code>this</code> inside a functino to an object that is provided as the first argument.</li>
+		<li>You can add custom properties to  functions the same way you can add properties to any object in JavaScript. For exampe, you could add a description property to describe what it does.</li>
+		<li>An <b>Immeditately Invoked Function Expression</b> or IIFE ('iffy') is an anonymous function that is invoked as soon as it’s defined.
+			<pre>
+				<code>
+(function(){
+  const temp = 'World';
+  console.log(`Hello ${temp}`);
+})();
+				</code>
+			</pre></li>
+			<li>Placing any code that uses the temporary variable inside an IIFE will ensure it’s only available while the IIFE is invoked, then it will disappear. This can be used to create a temporary variable.</li>
+			<li>An IIFE can be used to set up any initialization code that there’ll be no need for again. Because the code is only run once, there’s no need to create any reusable, named functions, and all the variables will also be temporary.</li>
+			<li>An IIFE can be used to enclose a block of code inside its own private scope so it doesn’t interfere with any other part of the program.</li>
+			<li>The dynamic nature of JavaScript means that a function is able to not only call itself, but define itself, and even redefine itself. This is done by assigning an anonymous function to a variable that hasthe same name as the function.</li>
+			<li>If any properties have previously been set on the function, these will be lost when the function redefines itself.</li>
+			<li>A recursive function is one that invokes itself until a certain condition is met. It’s a useful tool to use when iterative processes are involved.</li>
+			<li>A <b>promise</b> represents the future result of an asynchronous operation. Promises don't do anything that can't already be achieved using callbacks, but they help simplify the process, and avoid the convoluted code that can result from using multiple callbacks.</li>
+			<li>Once a promise has been settled, the <code>then()</code> method can be used to deal with the outcome. This method accepts two arguments. The first is a fulfilment function that’s called when the promise is resolved. Any data returned from the <code>resolve()</code> function will be passed along to this function. The second argument is a rejection function that’s called if the promise is rejected. Similar to the fulfilment function, the rejection function receives any data returned from the <code>reject()</code> function.</li>
+			<li>Alternatively, the <code>catch()</code> method can be used to specify what to do if the operation fails instead.</li>
+			<li>The <code>then()</code> and <code>catch()</code> methods can be chained together to form a succinct description of how to deal with the outcome of the promise.</li>
+			<li>If each function that performs an asynchronous operation returns a promise, we can chain the <code>then()</code> methods together to form a sequential piece of code that’s easy to read. Each promise will only begin once the previous promise has been settled.</li>
+			<li>Curryingis a process that involves the partial application of functions. A function is said to be curried when not all arguments have been supplied to the function, so it returns another function that retains the arguments already provided, and expects the remaining arguments that were omitted when the original function was called. A final result is only returned once all the expected arguments have eventually been provided.</li>
+		</ul>
+			<h4>JavaScript: Novice to Ninja - Chapter 13</h4>
+			<ul>
+			<li>The Fetch API uses promises to avoid callback hell, and also streamlines a number of concepts that had become cumbersome when using the XMLHttpRequest object.</li>
+			<li>The <code>ok</code> property will return <code>true</code> if the <code>status</code> property is between 200 and 299. We need to manually check if this happens because the promise will only be rejected in the case of a network error, rather than something like a '404 page not found error', which is still considered a successful request in terms of the promise.</li>
+			<li>The <code>redirect()</code> method can be used to redirect to another URL. It creates a new promise that resolves to the response from the redirected URL.</li>
+	</ul>
+	<div class="exercices">
+		<h3>Exercises</h3>
+		<ul>
+			<li><a href="quiz/index.html">Quiz Game</a></li>
+			<li><a href="ajax/ajax.html">AJAX Exercise</a></li>
+			<li><a href="todo/todo.html">ToDo Exercise</a></li>
+		</ul>
+	</div>
+
+</body>
+
+</html>
