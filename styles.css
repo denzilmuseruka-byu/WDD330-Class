@@ -2067,7 +2067,9 @@ a {
 .hover-border-brown:hover {
   border-color: #795548 !important
 }
-
+.exercices ul li a {
+  color: #1038a7;
+}
 .border-cyan,
 .hover-border-cyan:hover {
   border-color: #00bcd4 !important
