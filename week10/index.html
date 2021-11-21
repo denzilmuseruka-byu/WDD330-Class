@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Denzil Museruka - WDD 330 Portfolio</title>
+	<link rel='stylesheet' href='../styles.css'>
+</head>
+
+<body>
+	<!-- Navbar (sit on top) -->
+	<div class="nav-top">
+		<div class="bar white padding card nav-text">
+			<a href="../index.html" class="bar-item button">WDD-330</a>
+			<!-- Right-sided navbar links. Hide them on small screens -->
+			<div class="right hide-small">
+				<span class="nav-item">
+					<a href="../index.html">
+						Home
+					</a>
+				</span>
+				<span class="nav-item">
+					<a href="../week07/index.html">
+						Week 07
+					</a>
+				</span>
+				<span class="nav-item">
+					<a href="../week08/index.html">
+						Week 08
+					</a>
+				</span>
+				<span class="nav-item">
+					<a href="../week09/index.html">
+						Week 09
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<h2>Week 4</h2>
+	<h3>Notes</h3>
+	<h4>MDN Web Docs - Client-side form validation</h4>
+	<ul>
+		<li>Client-side validation is an initial check and an important feature of good user experience; by catching
+			invalid data on the client-side, the user can fix it straight away.</li>
+		<li>Client-side validation should not be considered an exhaustive security measure! Your apps should always
+			perform security checks on any form-submitted data on the server-side as well as the client-side.</li>
+		<li>Never trust data passed to your server from the client. Even if your form is validating correctly and
+			preventing malformed input on the client-side, a malicious user can still alter the network request.</li>
+		<li>Built-in form validation uses HTML5 form validation features. This validation generally doesn't require much
+			JavaScript. Built-in form validation has better performance than JavaScript, but it is not as customizable
+			as JavaScript validation.</li>
+		<li>JavaScript validation is coded using JavaScript. This validation is completely customizable, but you need to
+			create it all (or use a library).</li>
+		<li><code><a href="/en-US/docs/Web/HTML/Attributes/required">required</a></code>: Specifies whether a form field
+			needs to be filled in before the form can be submitted.</li>
+		<li><code><a href="/en-US/docs/Web/HTML/Attributes/minlength">minlength</a></code> and
+			<code><a href="/en-US/docs/Web/HTML/Attributes/maxlength">maxlength</a></code>: Specifies the minimum and
+			maximum length of textual data (strings).</li>
+		<li><code><a href="/en-US/docs/Web/HTML/Attributes/min">min</a></code> and
+			<code><a href="/en-US/docs/Web/HTML/Attributes/max">max</a></code>: Specifies the minimum and maximum values
+			of numerical input types.</li>
+		<li><code>type</code>: Specifies whether the data needs to be a number, an email address, or some other specific
+			preset type.</li>
+		<li><code><a href="/en-US/docs/Web/HTML/Attributes/pattern">pattern</a></code>: Specifies a <a
+				href="/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">regular expression</a> that defines a
+			pattern the entered data needs to follow.</li>
+		<li>When an element is valid it matches the <code>:valid</code> CSS pseudo-class.</li>
+		<li>When an element is invalid it matches the <code>:invalid</code> CSS pseudo-class.</li>
+		<li>You must use JavaScript if you want to take control over the look and feel of native error messages or to
+			deal with legacy browsers that do not support HTML's built-in form validation.</li>
+	</ul>
+	<h4>MDN Web Docs - Using Fetch</h4>
+	<ul>
+		<li>The simplest use of <code>fetch()</code> takes one argument — the path to the resource you want to fetch —
+			and returns a promise containing the response (a Response object).</li>
+		<li>The <code>fetch()</code> method can optionally accept a second parameter, an init object that allows you to
+			control a number of different settings.</li>
+		<li>To cause browsers to send a request with credentials included on both same-origin and cross-origin calls,
+			add <code>credentials: 'include'</code> to the init object you pass to the <code>fetch()</code> method.</li>
+		<li>The <code>Headers</code> interface allows you to create your own headers object via the
+			<code>Headers()</code> constructor. A headers object is a simple multi-map of names to values.</li>
+		<li>Since headers can be sent in requests and received in responses, and have various limitations about what
+			information can and should be mutable, headers' objects have a <em>guard</em> property. This is not exposed
+			to the Web, but it affects which mutation operations are allowed on the headers object.
+			<br><br>
+			Possible guard values are:
+
+			<ul>
+				<li><code>none</code>: default.</li>
+				<li><code>request</code>: guard for a headers object obtained from a request (<a
+						href="/en-US/docs/Web/API/Request/headers"><code>Request.headers</code></a>).</li>
+				<li><code>request-no-cors</code>: guard for a headers object obtained from a request created with <a
+						href="/en-US/docs/Web/API/Request/mode"><code>Request.mode</code></a> <code>no-cors</code>.</li>
+				<li><code>response</code>: guard for a headers object obtained from a response (<a
+						href="/en-US/docs/Web/API/Response/headers"><code>Response.headers</code></a>).</li>
+				<li><code>immutable</code>: guard that renders a headers object read-only; mostly used for
+					ServiceWorkers.</li>
+			</ul>
+		</li>
+		<li>Response instances are returned when fetch() promises are resolved.</li>
+		<li>Both requests and responses may contain body data. A body is an instance of any of the following types:
+
+			<ul>
+				<li><a
+						href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer"><code>ArrayBuffer</code></a>
+				</li>
+				<li><a href="/en-US/docs/Web/API/ArrayBufferView"><code>ArrayBufferView</code></a> (Uint8Array and
+					friends)</li>
+				<li><a href="/en-US/docs/Web/API/Blob"><code>Blob</code></a>/File</li>
+				<li>string</li>
+				<li><a href="/en-US/docs/Web/API/URLSearchParams"><code>URLSearchParams</code></a></li>
+				<li><a href="/en-US/docs/Web/API/FormData"><code>FormData</code></a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<div class="exercices">
+		<h3>Exercises</h3>
+		<ul>
+			<li><a href="fruits/fruits.html">Fruit Form Validation</a></li>
+			<li><a href="jsvalidate/index.html">JS Validation</a></li>
+		</ul>
+	</div>
+
+</body>
+
+</html>
