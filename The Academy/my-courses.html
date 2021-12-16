@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denzil">
+    <title>My Courses | Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h5>ACUITY</h5>
+        <h1>Oasis of excellence</h1>
+        <p class="header-info">When ideas are linked together, the facts themselves lose importance. What truly matters
+            is
+            the spaces between
+            linked ideas. The understandings that arise as more than the sum of their parts.</p>
+    </div>
+    <div class="main-actions">
+        <div class="filter">
+            <label for="categories">Filter by status:</label>
+            <select name="categories" id="categories" onchange="filter()">
+
+            </select>
+            <br><br>
+        </div>
+        <div class="add-container">
+            <button class="add-btn" onclick="courses()">Courses</button>
+        </div>
+    </div>
+    <div class="content">
+        <div id="course-list" class="course-list">
+        </div>
+        <!-- The Modal -->
+        <div id="updateModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h2>Update Status</h2>
+                </div>
+                <div id="modal-body" class="modal-body">
+                  <p>Some other text...</p>
+                </div>                
+              </div>
+
+        </div>
+
+        <!-- Modal content -->
+
+    </div>
+    <script src="./js/my-courses.js"></script>
+</body>
+
+</html>

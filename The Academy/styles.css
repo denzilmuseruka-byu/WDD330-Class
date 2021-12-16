@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* Style the body */
+body {
+  font-family: 'Abel';
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 22px;
+  text-align: center;
+  background: #1E293B;
+  color: white;
+  font-size: 25px;
+  min-height: 260px;
+}
+
+/* Page Content */
+.content {
+  /* padding:20px; */
+}
+.course-image {
+  width: 376px;
+}
+.course-image img{
+  width: inherit;
+}
+.header-info {
+  font-size: 24px;
+    color: #fff;
+}
+.filter {
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+  width: 50%;
+  margin: 5px 12px;
+}
+label {
+  margin: 5px 12px;
+}
+select {
+  height: 32px;
+  min-width: 24%;
+  font-size: 20px;
+}
+.add-btn,.btnView {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #008CBA;
+}
+.add-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.main-actions {
+  display: flex;
+}
+.card .card_header 
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card .card_header h1 {
+  font-size: 22px;
+  color: #0a253f;
+}
+.wrapper {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+ border: 2px solid #000000;
+ padding-bottom: 32px;
+ background-color: #FFF;
+ margin: 66px 0px;
+}
+.card .card_header p {
+  font-size: 16px;
+  padding: 10px 20px 0 0;
+  color: #4a4970;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  background: #1E293B;
+}
+.card .content-image .fa {
+  padding: 7px 10px;
+  font-size: 25px;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #025aa5;
+}
+header {
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+.formField {
+  width: 100%;
+  height: 32px;
+  /* padding: 16px; */
+}
+.card_info {
+    color: #0a253f;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+   
+}
+.btnAdd a {
+  color: #FFF;
+  text-decoration: none;
+}
+.btnView a {
+  color: #FFF;
+  text-decoration: none;
+}
+.card_info p{
+    margin:15px 10px;
+}
+.card_info span{
+    color: #4a4970;
+    margin-right: 10px;
+    background-color: inherit;
+}
+
+ .card_footer{
+    padding: 10px 20px;
+    align-items: center;
+    background-color: #F0F4F7;
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid #025aa5;
+
+}
+
+ .card_footer button{
+    width: 100px;
+    font-size: 16px;
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #025aa5;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card_footer button{
+    margin-left: 10px;
+}
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card {
+  width: 400px;
+  user-select: none;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  border-radius: 5px;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.card_footer span {
+  color: #FFF;
+  padding: 6px;
+  height: 20px;
+  width: 80px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.error {
+font-style: italic;
+color: red;
+}

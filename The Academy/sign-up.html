@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Academy App</title>
+  <link rel="icon" href="/final-project/favicon.PNG" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="placeholder">
+    </div>
+    <div class="wrapper">
+      <header>
+        <img src="./images/logo.PNG" width="320" />
+        <h4>Let's get started</h4>
+      </header>
+      <form action="index.html" id="signUpForm" novalidate>
+        <div class="formField username">
+          <div class="input-area">
+            <input type="text" placeholder="Username" id="username" name="username" required minlength="3"
+              class="focus:border-dark-900 focus:ring-1 focus:ring-dark-900 focus:outline-none focus:border-none w-full text-sm text-black placeholder-gray-400 border border-gray-200 rounded-md py-2 pl-10">
+            <i class="icon fas fa-user"></i>
+            <i class="error error-icon hidden fas fa-exclamation-circle" id="usernameIcon"></i>
+            <i class="valid-icon  hidden fas fa-check" id="validName"></i>
+          </div>
+          <div id="nameErrors"></div>
+
+        </div>
+
+        <div class="formField email">
+          <div class="input-area">
+            <input type="email" placeholder="Email" id="email" name="email" required minlength="6"
+              class="focus:border-dark-900 focus:ring-1 focus:ring-dark-900 focus:outline-none focus:border-none  w-full text-sm text-black placeholder-gray-400 border border-gray-200 rounded-md py-2 pl-10">
+            <i class="icon fas fa-envelope "></i>
+            <i class="error hidden error-icon fas fa-exclamation-circle" id="emailIcon"></i>
+            <i class="valid-icon hidden fas fa-check" id="validEmail"></i>
+          </div>
+          <div id="emailError"></div>
+        </div>
+
+
+
+        <div class="formField password">
+          <div class="input-area">
+            <input type="password" placeholder="Password" id="psw" name="psw" required minlength="6"
+              class="focus:border-dark-900 focus:ring-1 focus:ring-dark-900 focus:outline-none focus:border-none  w-full text-sm text-black placeholder-gray-400 border border-gray-200 rounded-md py-2 pl-10">
+            <i class="icon fas fa-lock"></i>
+            <i class="error error-icon hidden fas fa-exclamation-circle" id="pswIcon"></i>
+            <i class="valid-icon  hidden fas fa-check" id="validPsw"></i>
+          </div>
+        </div>
+
+        <div id="pswErrors"
+          class="hidden my-4 h-48 hover:bg-blue-500x hover:border-transparentx hover:shadow-lgx group block rounded-lg p-4 border border-gray-200">
+          <h5>Password must have:</h5>
+          <p id="hasLowercase" class="invalid">A <b>lowercase</b> letter.</p>
+          <p id="hasUppercase" class="invalid">At least one <b>uppercase ('A' - 'Z').</b> letter</p>
+          <p id="hasDigit" class="invalid">At least one <b>digit('0' - '9').</b></p>
+          <p id="hasMinlength" class="invalid">Minimum <b>6 characters</b></p>
+        </div>
+
+
+        <div class="pass-txt mt-8">
+          <p>By creating an account you agree to our <a href="#">Terms</a>.</p>
+        </div>
+
+        <input type="submit" value="Sign up">
+      </form>
+      <div class="sign-txt">Already have an account? <a href="index.html">Sign in</a></div>
+    </div>
+    <div class="placeholder">
+    </div>
+  </div>
+  <!-- <script src="js/app.js" type="module"></script>  -->
+  <script src="./js/auth.js"></script>
+
+</body>
+
+</html>
