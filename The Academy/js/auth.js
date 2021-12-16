@@ -62,6 +62,7 @@ if (email) {
 // When the user clicks on the password field, show the message box
 if (password) {
   password.oninput = function () {
+    debugger;
     // If there is still an error, show the correct error.
     document.getElementById("validPsw").classList.add('hidden');
     document.getElementById("pswErrors").classList.remove('hidden');
@@ -209,7 +210,7 @@ function showPasswordError() {
   }
 
   // Validate length
-  if (password.value.length >= 4) {
+  if (password.value.length >= 6) {
     hasMinlength.classList.remove("invalid");
     hasMinlength.classList.add("valid");
     hasMinLength = true;
